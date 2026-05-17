@@ -1,0 +1,18 @@
+1. Vai trò của HTTP Status Codes trong REST API
+HTTP Status Code giúp:
+Client biết request thành công hay thất bại
+Phân biệt từng loại lỗi
+Xử lý logic frontend/mobile chính xác
+API trở nên chuẩn RESTful và dễ tích hợp
+
+Tại sao cần Jackson Dataformat XML?
+Mặc định Spring Boot:
+Chỉ hỗ trợ JSON với Jackson
+Để serialize object Java → XML cần thêm:
+<dependency>
+    <groupId>com.fasterxml.jackson.dataformat</groupId>
+    <artifactId>jackson-dataformat-xml</artifactId>
+</dependency>
+Dependency này giúp:
+Spring Boot tự động convert object thành XML
+Hỗ trợ Content Negotiation với XML
